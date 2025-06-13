@@ -1,0 +1,115 @@
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.15);
+  padding: 32px 24px 16px 24px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2d3a4b;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: #f7fafd;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(60, 60, 120, 0.07);
+  padding: 24px 18px;
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 0 auto 18px auto;
+}
+
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+  justify-content: center;
+}
+
+input[type="range"] {
+  width: 180px;
+  accent-color: #3b82f6;
+}
+
+.btn {
+  background: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0 auto 16px auto;
+  display: block;
+  transition: background 0.2s;
+}
+.btn:disabled {
+  background: #b6c6e0;
+  cursor: not-allowed;
+}
+.download-btn {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #06b6d4 0%, #3b82f6 100%);
+}
+
+.error {
+  color: #e53e3e;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.preview-row {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 18px;
+}
+.preview-col {
+  flex: 1;
+  text-align: center;
+}
+.preview-img {
+  max-width: 100%;
+  max-height: 220px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(60, 60, 120, 0.10);
+  margin-top: 8px;
+}
+
+.footer {
+  text-align: center;
+  color: #7b8ca6;
+  font-size: 0.95rem;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 98vw;
+    padding: 10px 2vw 10px 2vw;
+  }
+  .preview-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
